@@ -1,0 +1,70 @@
+@mixin barra-menu() {
+    height: 4px;
+    width: 30px;
+    background: white;
+}
+
+.container__header {
+    
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding: 0 1rem;
+        background: black;
+        
+        .menu__hanburguer {
+
+            #barra-1 {
+                @include barra-menu();
+            }
+
+            #barra-2 {
+                @include barra-menu();
+                margin: 5px 0
+            }
+
+            #barra-3 {
+                @include barra-menu();
+            }
+        }
+
+
+        .container__navBar {
+            display: none;
+        }
+    }
+
+    .container__pesquisa {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        padding: 2em 0;
+
+        .pesquisa {
+            width: 230px;
+            height: 40px;
+            border: 1px solid black;
+
+            &::placeholder {
+                padding-left: 15px;
+            }
+        }
+
+        .botao__pesquisa {
+            background: white;
+            width: 100px;
+            height: 40px;
+            border: 1px solid black;
+            font-weight: 500;
+            font-size: $tamanho-da-fonte + 0.2;
+        }
+    }
+
+    .container__banner {
+        img {
+            width: 100%;
+        }
+    }
+}

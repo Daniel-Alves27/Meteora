@@ -1,0 +1,41 @@
+.container__facilidades {
+    background: $preto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    padding: 2.5em 1em;
+    
+
+    h2 {
+        font-size: $tamanho-da-fonte + 0.5;
+        text-align: center;
+        color: $branco;
+        font-weight: 500;
+    }
+
+    .facilidades__itens {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.5em 1em;
+        width: 320px;
+        align-self: center;
+
+        img {
+            grid-row: 1/3;
+            align-self: center;
+            width: 50px;
+        }
+
+        h3 {
+            color: $verde-menu-humburger;
+            font-size: $tamanho-da-fonte + 0.3;
+            font-weight: 500;
+        }
+
+        p {
+            color: $branco;
+            grid-column: 2/3;
+        }
+    }
+}
