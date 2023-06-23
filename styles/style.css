@@ -72,6 +72,50 @@ html, body {
   padding: 0.8em 0;
 }
 
+.container__produtos {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 0;
+  gap: 2em;
+}
+.container__produtos .titulo__produtos {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+.container__produtos .produtos__itens {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(108, 117, 125, 0.15);
+  width: 90vw;
+  margin: 0 auto;
+  gap: 1em;
+}
+.container__produtos .produtos__itens img {
+  width: 90vw;
+}
+.container__produtos .produtos__itens .card__titulo {
+  font-weight: 700;
+  padding-left: 1em;
+}
+.container__produtos .produtos__itens .card__texto {
+  font-size: 0.8rem;
+  padding-left: 1em;
+  line-height: 16px;
+}
+.container__produtos .produtos__itens .preco {
+  font-weight: 700;
+  padding-left: 1em;
+}
+.container__produtos .produtos__itens .ver__mais {
+  width: 6.5rem;
+  height: 2.5rem;
+  background-color: #9353FF;
+  color: white;
+  font-weight: 500;
+  margin: 0 0 1em 1em;
+}
+
 .container__facilidades {
   background: black;
   display: flex;
@@ -106,4 +150,14 @@ html, body {
 .container__facilidades .facilidades__itens p {
   color: white;
   grid-column: 2/3;
+}
+
+.rodape {
+  background: black;
+}
+.rodape .rodape__texto {
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

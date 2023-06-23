@@ -1,0 +1,10 @@
+.rodape {
+    background: $preto;
+
+    .rodape__texto {
+        color: $branco;
+        text-align: center;
+        padding: 2em 0;
+        font-size: $tamanho-da-fonte - 0.2;
+    }
+}
