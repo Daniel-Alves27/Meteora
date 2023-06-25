@@ -1,4 +1,35 @@
 .container__newletter {
     width: 80%;
-    margin: 0 auto;
+    margin: 2em auto;
+    border: 1px solid $preto;
+    padding: 0.5em 1em 2em 1em;
+
+    .texto__newletter {
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .container__enviarEmail {
+        display: flex;
+
+        .campo__email {
+            border: 1px solid $preto;
+            height: 35px;
+            box-sizing: border-box;
+            width: 70%;
+
+            &::placeholder {
+                padding-left: 10px;
+            }
+        }
+
+        .botao__enviar {
+            background: $cor-botao;
+            height: 35px;
+            width: 30%;
+            font-weight: 500;
+            color: $branco;
+        }
+    }
+
 }

@@ -10,24 +10,65 @@ html, body {
   padding: 0 1rem;
   background: black;
 }
-.container__header .cabecalho .menu__hanburguer #barra-1 {
-  height: 4px;
-  width: 30px;
-  background: white;
+.container__header .cabecalho .menu__hanburguer {
+  cursor: pointer;
 }
-.container__header .cabecalho .menu__hanburguer #barra-2 {
+.container__header .cabecalho .menu__hanburguer .barraMenu {
   height: 4px;
   width: 30px;
   background: white;
-  margin: 5px 0;
-}
-.container__header .cabecalho .menu__hanburguer #barra-3 {
-  height: 4px;
-  width: 30px;
-  background: white;
+  margin-bottom: 4px;
+  transition: 0.5s;
 }
 .container__header .cabecalho .container__navBar {
   display: none;
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  background: #343A40;
+  height: 220px;
+  width: 150px;
+  transition: 0.5s ease-in-out;
+}
+.container__header .cabecalho .container__navBar .navBar {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em;
+  gap: 1em;
+}
+.container__header .cabecalho .container__navBar .navBar li {
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+.container__header .cabecalho .container__navBar .navBar li .fecharMenu {
+  cursor: pointer;
+}
+.container__header .cabecalho .container__navBar .navBar li .fecharMenu .barraMenuFechar {
+  height: 4px;
+  width: 30px;
+  background: white;
+  margin-bottom: 4px;
+  transition: 0.5s;
+  background: #DAFF01;
+}
+.container__header .cabecalho .container__navBar .navBar li .fecharMenu #barra-1 {
+  transform: translateY(9px) rotate(-45deg);
+}
+.container__header .cabecalho .container__navBar .navBar li .fecharMenu #barra-2 {
+  opacity: 0;
+}
+.container__header .cabecalho .container__navBar .navBar li .fecharMenu #barra-3 {
+  transform: translateY(-7px) rotate(45deg);
+}
+.container__header .cabecalho .container__navBar .navBar li:nth-child(1) {
+  border-bottom: none;
+  padding-bottom: 2px;
+  text-align: right;
+}
+.container__header .cabecalho .container__navBar .navBar li:nth-last-child(1) {
+  border-bottom: none;
 }
 .container__header .container__pesquisa {
   display: flex;
@@ -53,6 +94,12 @@ html, body {
   border: 1px solid black;
   font-weight: 500;
   font-size: 1.2rem;
+  transition: 0.3s;
+}
+.container__header .container__pesquisa .botao__pesquisa:hover {
+  background: black;
+  color: white;
+  transition: 0.6s;
 }
 .container__header .container__banner img {
   width: 100%;
@@ -114,6 +161,13 @@ html, body {
   color: white;
   font-weight: 500;
   margin: 0 0 1em 1em;
+  transition: 0.3s;
+}
+.container__produtos .produtos__itens .ver__mais:hover {
+  background: white;
+  color: #9353FF;
+  border: 1px solid #9353FF;
+  transition: 0.6s;
 }
 
 .container__facilidades {
@@ -122,7 +176,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   gap: 2em;
-  padding: 2.5em 1em;
+  padding: 2.5em;
 }
 .container__facilidades h2 {
   font-size: 1.5rem;
@@ -150,6 +204,39 @@ html, body {
 .container__facilidades .facilidades__itens p {
   color: white;
   grid-column: 2/3;
+}
+
+.container__newletter {
+  width: 80%;
+  margin: 2em auto;
+  border: 1px solid black;
+  padding: 0.5em 1em 2em 1em;
+}
+.container__newletter .texto__newletter {
+  text-align: center;
+  padding: 1em 0;
+}
+.container__newletter .container__enviarEmail {
+  display: flex;
+}
+.container__newletter .container__enviarEmail .campo__email {
+  border: 1px solid black;
+  height: 35px;
+  box-sizing: border-box;
+  width: 70%;
+}
+.container__newletter .container__enviarEmail .campo__email::-moz-placeholder {
+  padding-left: 10px;
+}
+.container__newletter .container__enviarEmail .campo__email::placeholder {
+  padding-left: 10px;
+}
+.container__newletter .container__enviarEmail .botao__enviar {
+  background: #9353FF;
+  height: 35px;
+  width: 30%;
+  font-weight: 500;
+  color: white;
 }
 
 .rodape {
