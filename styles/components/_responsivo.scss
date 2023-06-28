@@ -1,5 +1,6 @@
 @media screen and (min-width:768px) {
-//Header
+
+    //Header
     .container__header {
         display: grid;
 
@@ -65,23 +66,32 @@
         //.container__banner {}
     }
 
-//________________________________________________________________________
+    //________________________________________________________________________
 
-//categoria   
+    //categoria   
     .container__categoria {
-        grid-template-columns: repeat(3,auto);
+        grid-template-columns: repeat(3, auto);
 
         h2 {
             grid-column: 1/4;
         }
 
-    }
-//________________________________________________________________________
+        .img__mobile {
+            display: none;
+        }
 
-//Produtos
+        .img__tablet {
+            display: block;
+        }
+
+    }
+
+    //________________________________________________________________________
+
+    //Produtos
     .container__produtos {
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2, auto);
         gap: 1em 0;
 
         .titulo__produtos {
@@ -95,12 +105,12 @@
             img {
                 width: 45vw;
             }
-        }   
+        }
     }
 
-//________________________________________________________________________
+    //________________________________________________________________________
 
-//Facilidade
+    //Facilidade
     .container__facilidades {
         h2 {
             font-size: $tamanho-da-fonte + 1;
@@ -113,17 +123,19 @@
         }
     }
 
-//________________________________________________________________________
+    //________________________________________________________________________
 
-//Newletter
+    //Newletter
     .container__newletter {
         padding: 1em 1em 3em 1em;
+
         .texto__newletter {
             font-size: $tamanho-da-fonte + 0.2;
         }
 
         .container__enviarEmail {
             justify-content: center;
+
             .campo__email {
                 width: 50%;
             }
@@ -132,14 +144,105 @@
                 width: 15%;
             }
         }
-    }  
+    }
 
-//________________________________________________________________________
+    //________________________________________________________________________
 
-//Footer
+    //Footer
     .rodape {
         .rodape__texto {
             width: 35em;
+        }
+    }
+}
+
+
+//________________________________________________________________________
+
+//DESKTOP
+@media screen and (min-width: 1440px) {
+
+    .container__categoria {
+        grid-template-columns: repeat(6, auto);
+
+
+        h2 {
+            grid-column: 1/7;
+        }
+
+        .img__mobile {
+            display: none;
+        }
+
+        .img__tablet {
+            display: block;
+        }
+
+    }
+
+    //________________________________________________________________________
+
+    //Produtos
+    .container__produtos {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 1em 0;
+
+        .titulo__produtos {
+            grid-column: 1/4;
+            padding-bottom: 1em;
+        }
+
+        .produtos__itens {
+            width: 30vw;
+
+            img {
+                width: 30vw;
+            }
+        }
+    }
+
+    //________________________________________________________________________
+
+    //Facilidade
+    .container__facilidades {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        gap: 1em  2em;
+
+        h2 {
+            font-size: $tamanho-da-fonte + 1;
+            grid-column: 1/4;
+        }
+
+        .facilidades__itens {
+            img {
+                width: 70px;
+            }
+        }
+    }
+
+    //________________________________________________________________________
+
+    //Newletter
+    .container__newletter {
+        width: 50%;
+        //padding: 1em 1em 3em 1em;
+
+        .texto__newletter {
+            font-size: $tamanho-da-fonte + 0.2;
+        }
+
+        .container__enviarEmail {
+            justify-content: center;
+
+            .campo__email {
+                width: 55%;
+            }
+
+            .botao__enviar {
+                width: 10%;
+            }
         }
     }
 }
