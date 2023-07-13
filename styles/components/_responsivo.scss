@@ -63,7 +63,72 @@
             }
         }
 
-        //.container__banner {}
+        .container__banner {
+            .container__img {
+
+                .img__itens {
+                    display: grid;
+                    grid-template-columns: 0.5fr 0.5fr;
+                    height: 35vh;
+
+                    .mobile {
+                        display: none;
+                    }
+
+                    .tablet--banner {
+                        display: block;
+                        height: 40vh;
+                    }
+
+                    //banner laranja_______________________
+                    .img__banner__laranja--responsivo {
+                        width: 50vw;
+                        grid-column: 2/3;
+                    }
+
+                    .laranja__banner--responsivo {
+                        grid-column: 1/2;
+                        width: 50vw;
+                        height: 100vh;
+                    }
+
+                    .laranja__texto--responsivo {
+                        width: 350px;
+                        top: 40%;
+                        left: 35%;
+                    }
+
+                    .laranja__descricao--responsivo {
+                        top: 55%;
+                        left: 39%;
+                    }
+
+                    //banner rosa_______________________
+                    .img__banner__rosa--responsivo {
+                        width: 50vw;
+                        height: 45vh;
+                        grid-column: 1/2;
+                    }
+
+                    .rosa__banner--responsivo {
+                        grid-column: 2/3;
+                        width: 50vw;
+                        height: 100vh;
+                    }
+
+                    .rosa__texto--responsivo {
+                        width: 350px;
+                        top: 40%;
+                        left: 60%;
+                    }
+
+                    .rosa__descricao--responsivo {
+                        top: 55%;
+                        left: 65%;
+                    }
+                }
+            }
+        }
     }
 
     //________________________________________________________________________
@@ -110,6 +175,70 @@
 
     //________________________________________________________________________
 
+    //Modal produtos
+
+    .container__modal--produtos {
+        display: none;
+        grid-column: 1/3;
+        grid-template-columns: repeat(2, 1fr);
+        width: 70vw;
+        left: 150px;
+        top: 20px;
+        height: auto;
+
+        .modal__header {
+            display: flex;
+            grid-column: 1/3;
+            justify-content: space-around;
+
+            .modal__texto {
+                width: 350px;
+                padding-right: 5em;
+            }
+        }
+
+        img {
+            width: 30vw;
+            height: 40vh;
+        }
+
+        .modal__informacoes {
+            grid-column: 2/3;
+            width: 28vw;
+            border: none;
+
+            img {
+                display: none;
+            }
+
+            .detalhe__produto {
+                width: 25vw;
+            }
+
+            .escolher__cor {
+                width: 25vw;
+
+                .escolher__cor--item {
+                    width: 25vw;
+                }
+            }
+
+            .escolher__tamanho {
+                width: 25vw;
+
+                .escolher__tamanho--item {
+                    width: 15vw;
+                }
+
+                .botao__add--sacola {
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+
+    //________________________________________________________________________
+
     //Facilidade
     .container__facilidades {
         h2 {
@@ -148,6 +277,19 @@
 
     //________________________________________________________________________
 
+    //modal Newletter
+    .modal__email__cadastrado {
+        width: 700px;
+
+        .header__email__cadastrado {
+            .modal__texto__header {
+                padding-right: 15rem;
+            }
+        }
+    }
+
+    //________________________________________________________________________
+
     //Footer
     .rodape {
         .rodape__texto {
@@ -162,6 +304,62 @@
 //DESKTOP
 @media screen and (min-width: 1440px) {
 
+    //Header
+    .container__header {
+
+        .container__banner {
+            .container__img {
+                .img__itens {
+
+                    .tablet--banner {
+                        display: none;
+                    }
+
+                    .desktop--banner {
+                        display: block;
+                        height: 40vh;
+                    }
+
+                    //banner laranja_______________________
+
+                    .laranja__texto--responsivo {
+                        width: 550px;
+                        font-size: $tamanho-da-fonte + 2;
+                        top: 40%;
+                        left: 25%;
+                    }
+
+                    .laranja__descricao--responsivo {
+                        font-size: $tamanho-da-fonte + 0.1;
+                        top: 57%;
+                        left: 23.5%;
+                    }
+
+                    //banner rosa_______________________
+                    .img__banner__rosa--responsivo {
+                        width: 50vw;
+                        height: 75vh;
+                    }
+
+                    .rosa__texto--responsivo {
+                        width: 550px;
+                        font-size: $tamanho-da-fonte + 2;
+                        top: 40%;
+                        left: 61%;
+                    }
+
+                    .rosa__descricao--responsivo {
+                        font-size: $tamanho-da-fonte + 0.1;
+                        top: 56%;
+                        left: 67%;
+                    }
+                }
+            }
+        }
+    }
+
+    //________________________________________________________________________
+    //Categoria
     .container__categoria {
         grid-template-columns: repeat(6, auto);
 
@@ -204,11 +402,61 @@
 
     //________________________________________________________________________
 
+    //Modal produtos
+
+    .container__modal--produtos {
+        display: none;
+        grid-column: 1/3;
+        grid-template-columns: repeat(2, 1fr);
+        left: 180px;
+
+        .modal__header {
+            grid-column: 1/3;
+        }
+
+        img {
+            width: 25vw;
+            height: 40vh;
+        }
+
+        .modal__informacoes {
+            grid-column: 2/3;
+            width: 28vw;
+            border: none;
+
+            img {
+                display: none;
+            }
+
+            .detalhe__produto {
+                width: 25vw;
+            }
+
+            .escolher__cor {
+                width: 25vw;
+
+                .escolher__cor--item {
+                    width: 25vw;
+                }
+            }
+
+            .escolher__tamanho {
+                width: 25vw;
+
+                .escolher__tamanho--item {
+                    width: 15vw;
+                }
+            }
+        }
+    }
+
+    //________________________________________________________________________
+
     //Facilidade
     .container__facilidades {
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        gap: 1em  2em;
+        grid-template-columns: repeat(3, auto);
+        gap: 1em 2em;
 
         h2 {
             font-size: $tamanho-da-fonte + 1;

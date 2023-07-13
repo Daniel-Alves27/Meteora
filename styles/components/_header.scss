@@ -116,8 +116,117 @@
     }
 
     .container__banner {
-        img {
-            width: 100%;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        width: 100vw;
+        position: relative;
+
+        .container__img {
+            display: flex;
+
+            .img__itens {
+                position: relative;
+                width: 100vw;
+                text-align: center;
+                transition: all 1s;
+
+                .img__banner {
+                    height: 60vh;
+                }
+
+                .tablet--banner {
+                    display: none;
+                }
+
+                .desktop--banner {
+                    display: none;
+                }
+
+                .banner__rosa {
+                    width: 100%;
+                    height: 30vh;
+                    background-color: $rosa-banner;
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                .banner__laranja {
+                    width: 100%;
+                    height: 30vh;
+                    background-color: $laranja-banner;
+                    position: absolute;
+                    bottom: 0;
+                }
+
+                .banner__texto {
+                    font-size: $tamanho-da-fonte + 1;
+                    color: $branco;
+                    font-weight: 500;
+                    width: 150px;
+                    position: absolute;
+                    top: 55%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .banner__descricao {
+                    position: absolute;
+                    color: $branco;
+                    top: 70%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                &:first-child {
+                    margin-left: -100vw;
+                    transition: all 1s;
+                }
+            }
+
+            //.item {
+            //    width: 100vw;
+            //    transition: all 1s;
+            //
+            //    &:first-child {
+            //        margin-left: -100vw;
+            //        transition: all 1s;
+            //    }
+            //}
+        }
+
+        .botao__banner {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: $tamanho-da-fonte + 0.5;
+            cursor: pointer;
+        }
+
+        #botao__esquerdo {
+            left: 15px;
+        }
+
+        #botao__direito {
+            right: 15px;
+        }
+
+        .barra__carrossel {
+            display: flex;
+            position: absolute;
+            gap: 1em;
+            top: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .barra__item {
+                width: 70px;
+                height: 5px;
+                background: rgba($color: $branco, $alpha: 30%);
+            }
         }
     }
 }

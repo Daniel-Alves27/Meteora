@@ -12,6 +12,18 @@
         padding: 0.8em 0;
     }
 
+    .categoria__item {
+        display: flex;
+        flex-direction: column;
+        .categoria__nome {
+            color: $branco;
+            background: $preto;
+            font-weight: 500;
+            padding: 0.4em 0;
+            text-align: center;
+        }
+    }
+
     .img__tablet {
         display: none;
     }

@@ -29,6 +29,15 @@
             width: 30%;
             font-weight: 500;
             color: $branco;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                background: $branco;
+                color: $cor-botao;
+                border: 1px solid $cor-botao;
+                transition: 1s;
+            }
         }
     }
 

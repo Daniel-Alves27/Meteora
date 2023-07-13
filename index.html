@@ -46,26 +46,95 @@
         </section>
 
         <div class="container__banner">
-            <img src="./images/img__carrossel/banner_carrosel--mobile.png" alt="banner do carrosel">
+            <div class="container__img">
+
+                <div class="img__itens">
+                    <img class="img__banner img__banner__laranja--responsivo" src="./images/img__carrossel/banner_carrosel--mobile-3.png" alt="">
+
+                    <div class="banner__laranja  laranja__banner--responsivo"></div>
+                    <h3 class="banner__texto  laranja__texto--responsivo">coleção atemporal</h3>
+                    <p class="banner__descricao  laranja__descricao--responsivo">Alto impacto visual, baixo impacto ambiental.</p>
+                </div>
+
+                <div class="img__itens">
+                    <img class="img__banner mobile" src="./images/img__carrossel/banner_carrosel--mobile.png" alt="">
+                    <img class="img__banner tablet--banner" src="./images/img__carrossel/banner_carrosel--tablet.png" alt="">
+                    <img class="img__banner desktop--banner" src="./images/img__carrossel/banner_carrosel--desktop.png" alt="">
+                </div>
+
+                <div class="img__itens">
+                    <img class="img__banner img__banner__rosa--responsivo" src="./images/img__carrossel/banner_carrosel--mobile-2.png" alt="">
+
+                    <div class="banner__rosa  rosa__banner--responsivo"></div>
+                    <h3 class="banner__texto  rosa__texto--responsivo">coleção atemporal</h3>
+                    <p class="banner__descricao  rosa__descricao--responsivo">Estilo e qualidade para durar.</p>
+                </div>
+            </div>
+
+
+
+            <button class="botao__banner" id="botao__esquerdo">◀</button>
+            <button class="botao__banner" id="botao__direito">▶</button>
+
+            <div class="barra__carrossel">
+                <button class="barra__item" id="barra__item-1"></button>
+                <button class="barra__item" id="barra__item-2"></button>
+                <button class="barra__item" id="barra__item-3"></button>
+            </div>
         </div>
     </header>
 
     <main class="container__main">
         <section class="container__categoria categoria__tablet">
             <h2>Busque por categoria:</h2>
-            <img class="img__mobile" src="./images/img__categorias/categoria-camisa.png" alt="categoria camisas">
-            <img class="img__mobile" src="./images/img__categorias/categoria-bolsas.png" alt="categoria bolsas">
-            <img class="img__mobile" src="./images/img__categorias/categoria-calcados.png" alt="categoria calçados">
-            <img class="img__mobile" src="./images/img__categorias/categoria-calcas.png" alt="categoria calças">
-            <img class="img__mobile" src="./images/img__categorias/categoria-casacos.png" alt="categoria casacos">
-            <img class="img__mobile" src="./images/img__categorias/categoria-oculos.png" alt="categoria óculos">
-            <!--imagens tablet-->
-            <img class="img__tablet" src="./images/img__categorias/categoria-camisa-tablet.png" alt="categoria camisas">
-            <img class="img__tablet" src="./images/img__categorias/categoria-bolsas-tablet.png" alt="categoria bolsas">
-            <img class="img__tablet" src="./images/img__categorias/categoria-calcados-tablet.png" alt="categoria calçados">
-            <img class="img__tablet" src="./images/img__categorias/categoria-calcas-tablet.png" alt="categoria calças">
-            <img class="img__tablet" src="./images/img__categorias/categoria-casacos-tablet.png" alt="categoria casacos">
-            <img class="img__tablet" src="./images/img__categorias/categoria-oculos-tablet.png" alt="categoria óculos">
+
+            <div class="categoria__item">
+                <img class="img__mobile" src="./images/img__categorias/categoria-camisa.png" alt="categoria camisas">
+                <!--imagens tablet-->
+                <img class="img__tablet" src="./images/img__categorias/categoria-camisa-tablet.png"
+                    alt="categoria camisas">
+                <p class="categoria__nome">camisetas</p>
+            </div>
+
+            <div class="categoria__item">
+                <img class="img__mobile" src="./images/img__categorias/categoria-bolsas.png" alt="categoria bolsas">
+                <!--imagens tablet-->
+                <img class="img__tablet" src="./images/img__categorias/categoria-bolsas-tablet.png"
+                    alt="categoria bolsas">
+                <p class="categoria__nome">bolsas</p>
+            </div>
+
+            <div class="categoria__item">
+                <img class="img__mobile" src="./images/img__categorias/categoria-calcados.png" alt="categoria calçados">
+                <!--imagens tablet-->
+                <img class="img__tablet" src="./images/img__categorias/categoria-calcados-tablet.png"
+                    alt="categoria calçados">
+                <p class="categoria__nome">calçados</p>
+            </div>
+
+            <div class="categoria__item">
+                <img class="img__mobile" src="./images/img__categorias/categoria-calcas.png" alt="categoria calças">
+                <!--imagens tablet-->
+                <img class="img__tablet" src="./images/img__categorias/categoria-calcas-tablet.png"
+                    alt="categoria calças">
+                <p class="categoria__nome">calças</p>
+            </div>
+
+            <div class="categoria__item">
+                <img class="img__mobile" src="./images/img__categorias/categoria-casacos.png" alt="categoria casacos">
+                <!--imagens tablet-->
+                <img class="img__tablet" src="./images/img__categorias/categoria-casacos-tablet.png"
+                    alt="categoria casacos">
+                <p class="categoria__nome">casacos</p>
+            </div>
+
+            <div class="categoria__item">
+                <img class="img__mobile" src="./images/img__categorias/categoria-oculos.png" alt="categoria óculos">
+                <!--imagens tablet-->
+                <img class="img__tablet" src="./images/img__categorias/categoria-oculos-tablet.png"
+                    alt="categoria óculos">
+                <p class="categoria__nome">óculos</p>
+            </div>
         </section>
 
         <section class="container__produtos">
@@ -77,7 +146,7 @@
                 <h4 class="card__texto">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
                     Modelagem unissex.</h4>
                 <p class="preco">R$ 70,00</p>
-                <button class="ver__mais">Ver mais</button>
+                <button class="ver__mais" id="ver__mais">Ver mais</button>
             </div>
 
             <div class="produtos__itens">
@@ -85,7 +154,7 @@
                 <h3 class="card__titulo">Calça Alfaiataria</h3>
                 <h4 class="card__texto">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</h4>
                 <p class="preco">R$ 180,00</p>
-                <button class="ver__mais">Ver mais</button>
+                <button class="ver__mais" id="ver__mais-2">Ver mais</button>
             </div>
 
             <div class="produtos__itens">
@@ -94,7 +163,7 @@
                 <h4 class="card__texto">Snicker casual com solado mais alto e modelagem robusta.
                     Modelo unissex.</h4>
                 <p class="preco">R$ 250,00</p>
-                <button class="ver__mais">Ver mais</button>
+                <button class="ver__mais" id="ver__mais-3">Ver mais</button>
             </div>
 
             <div class="produtos__itens">
@@ -102,7 +171,7 @@
                 <h3 class="card__titulo">Jaqueta Jeans</h3>
                 <h4 class="card__texto">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</h4>
                 <p class="preco">R$ 150,00</p>
-                <button class="ver__mais">Ver mais</button>
+                <button class="ver__mais" id="ver__mais-4">Ver mais</button>
             </div>
 
             <div class="produtos__itens">
@@ -110,7 +179,7 @@
                 <h3 class="card__titulo">Óculos Redondo</h3>
                 <h4 class="card__texto">Armação metálica em grafite com lentes arredondadas. Sem erro!</h4>
                 <p class="preco">R$ 120,00</p>
-                <button class="ver__mais">Ver mais</button>
+                <button class="ver__mais" id="ver__mais-5">Ver mais</button>
             </div>
 
             <div class="produtos__itens">
@@ -119,8 +188,60 @@
                 <h4 class="card__texto">Bolsa camel em couro sintético de alta duração.
                     Ideal para acompanhar você por uma vida!</h4>
                 <p class="preco">R$ 120,00</p>
-                <button class="ver__mais">Ver mais</button>
+                <button class="ver__mais" id="ver__mais-6">Ver mais</button>
             </div>
+
+            <!--/____________________________________________________________________________________/-->
+
+            <section class="container__modal--produtos">
+                <div class="modal__header">
+                    <img class="icon__checked" src="./images/icons/check-circle.svg" alt="">
+                    <h3 class="modal__texto">Confira detalhes sobre o produto</h3>
+                    <button class="icon__fechar" id="icon__fechar"><img src="./images/icons/botao-x.png"
+                            alt="fechar"></button>
+                </div>
+
+                <img id="img__modal" src="" alt="">
+
+                <section class="modal__informacoes">
+
+                    <div class="detalhe__produto">
+                        <h4 class="nome__produto"></h4>
+                        <p class="informacao__produto">info produto</p>
+                        <p class="preco__produto">preço</p>
+                        <span>Vendido e entregue por Riachuelo</span>
+                    </div>
+
+                    <div class="escolher__cor">
+                        <span>Cores:</span>
+                        <div class="escolher__cor--item">
+                            <input type="radio" id="azul-claro" name="cores" value="valor1">
+                            <label for="azul-claro">Azul claro</label>
+                            <input type="radio" id="offwhite" name="cores">
+                            <label for="offwhite">offwhite</label>
+                            <input type="radio" id="preto" name="cores">
+                            <label for="preto">preto</label>
+                        </div>
+                    </div>
+
+                    <div class="escolher__tamanho">
+                        <span>Tamanho:</span>
+                        <div class="escolher__tamanho--item">
+                            <input type="radio" id="p" name="tamanho">
+                            <label for="">P</label>
+                            <input type="radio" id="pp" name="tamanho">
+                            <label for="">PP</label>
+                            <input type="radio" id="m" name="tamanho">
+                            <label for="">M</label>
+                            <input type="radio" id="g" name="tamanho">
+                            <label for="">G</label>
+                            <input type="radio" id="gg" name="tamanho">
+                            <label for="">GG</label>
+                        </div>
+                        <button class="botao__add--sacola">Adicionar à sacola</button>
+                    </div>
+                </section>
+            </section>
         </section>
 
         <section class="container__facilidades">
@@ -142,15 +263,28 @@
             </div>
         </section>
 
-        <section class="container__newletter">
+        <form class="container__newletter">
             <h2 class="texto__newletter">Quer receber nossas novidades,
                 promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h2>
             <div class="container__enviarEmail">
                 <input type="email" name="" id="" class="campo__email" placeholder="Digite seu email">
-                <button class="botao__enviar">Enviar</button>
+                <button class="botao__enviar" id="botao__enviar">Enviar</button>
             </div>
 
-        </section>
+            <!--Modal email cadastrado-->
+
+            <div class="modal__email__cadastrado">
+                <div class="header__email__cadastrado">
+                    <img class="icon__checked" src="./images/icons/check-circle.svg" alt="">
+                    <h3 class="modal__texto__header">E-mail cadastrado com sucesso!</h3>
+                    <button class="icon__fechar" id="icon__fechar--modalNewletter"><img src="./images/icons/botao-x.png"
+                            alt="fechar"></button>
+                </div>
+
+                <span>Em breve você receberá novidades exclusivas da Meteora.</span>
+            </div>
+
+        </form>
     </main>
 
     <footer class="rodape">
