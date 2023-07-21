@@ -37,9 +37,7 @@ botaoDireito.addEventListener("click", () => {
     const lastItem = imgItens[imgItens.length - 1];
     containerImg.insertBefore(lastItem, imgItens[0]);
     imgItens = document.querySelectorAll(".img__itens");
-})
-
-//_________________________________________________________________
+});
 
 //_________________________________________________________________
 //Sessão produtos
@@ -51,9 +49,7 @@ const imagens = [
     { "url": "./images/img__produtos/Card jaqueta jeans.png" },
     { "url": "./images/img__produtos/Cards óculos.png" },
     { "url": "./images/img__produtos/Card bolsa.png" }
-]
-
-console.log()
+];
 
 const containerModal = document.querySelector(".container__modal--produtos");
 
@@ -71,8 +67,7 @@ const img = document.getElementById("img__modal");
 //_______________________________________________________________________
 
 //Abrir modal_______________________________________________________________
-const produtoItens = document.getElementById("ver__mais-4");
-const botaoVerMais = document.querySelectorAll(".ver__mais")
+const botaoVerMais = document.querySelectorAll(".ver__mais");
 
 for (let contador = 0; contador < botaoVerMais.length; contador++) {
     botaoVerMais[contador]
@@ -100,6 +95,11 @@ const modalEmailCadastrado = document.querySelector(".modal__email__cadastrado")
 const enviarCadastro = document.getElementById("botao__enviar");
 const fecharModalNewletter = document.getElementById("icon__fechar--modalNewletter");
 
+function validarEmail(email) {
+    const reEmail = /\S+@\S+\.\S+/;
+    return reEmail.test(email);
+}
+
 formNewletter.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -107,16 +107,17 @@ formNewletter.addEventListener("submit", (e) => {
 })
 
 function abrirModalNewletter() {
-    enviarCadastro.addEventListener("click", () => {
+    const campoEmail = document.getElementById("campo__email");
+    const inputEmail = campoEmail.value
+
+    if (validarEmail(inputEmail)) {
         modalEmailCadastrado.style.display = "flex";
-    })
+        campoEmail.value = "";
+    }
 }
 
 fecharModalNewletter.addEventListener("click", () => {
-    modalEmailCadastrado.style.display = "none"
+    modalEmailCadastrado.style.display = "none";
 })
 
-abrirModalNewletter()
 //___________________________________________________________________
-
-

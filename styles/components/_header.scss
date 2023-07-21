@@ -34,6 +34,7 @@
             height: 220px;
             width: 150px;
             transition: 0.5s ease-in-out;
+            z-index: 1;
 
             .navBar {
                 display: flex;
@@ -119,7 +120,7 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        width: 100vw;
+        width: 100%;
         position: relative;
 
         .container__img {
@@ -183,16 +184,6 @@
                     transition: all 1s;
                 }
             }
-
-            //.item {
-            //    width: 100vw;
-            //    transition: all 1s;
-            //
-            //    &:first-child {
-            //        margin-left: -100vw;
-            //        transition: all 1s;
-            //    }
-            //}
         }
 
         .botao__banner {

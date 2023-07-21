@@ -15,12 +15,18 @@
     .categoria__item {
         display: flex;
         flex-direction: column;
+        cursor: pointer;
+
         .categoria__nome {
             color: $branco;
             background: $preto;
             font-weight: 500;
             padding: 0.4em 0;
             text-align: center;
+        }
+
+        &:hover {
+            box-shadow: -3px 3px 15px 5px lightskyblue;
         }
     }
 

@@ -32,10 +32,10 @@
                             <div class="barraMenuFechar" id="barra-3"></div>
                         </button>
                     </li>
-                    <li>Home</li>
-                    <li>Nossas lojas</li>
-                    <li>Novidades</li>
-                    <li>Promoções</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Nossas lojas</a></li>
+                    <li><a href="#">Novidade</a>s</li>
+                    <li><a href="#">Promoções</a></li>
                 </ul>
             </div>
         </section>
@@ -48,8 +48,9 @@
         <div class="container__banner">
             <div class="container__img">
 
-                <div class="img__itens">
-                    <img class="img__banner img__banner__laranja--responsivo" src="./images/img__carrossel/banner_carrosel--mobile-3.png" alt="">
+                <div class="img__itens" id="img__banner--laranja">
+                    <img class="img__banner img__banner__laranja--responsivo"
+                        src="./images/img__carrossel/banner_carrosel--mobile-3.png" alt="">
 
                     <div class="banner__laranja  laranja__banner--responsivo"></div>
                     <h3 class="banner__texto  laranja__texto--responsivo">coleção atemporal</h3>
@@ -58,12 +59,14 @@
 
                 <div class="img__itens">
                     <img class="img__banner mobile" src="./images/img__carrossel/banner_carrosel--mobile.png" alt="">
-                    <img class="img__banner tablet--banner" src="./images/img__carrossel/banner_carrosel--tablet.png" alt="">
+                    <img class="img__banner tablet--banner" src="./images/img__carrossel/banner_carrosel--tablet.png"
+                        alt="">
                     <img class="img__banner desktop--banner" src="./images/img__carrossel/banner_carrosel--desktop.png" alt="">
                 </div>
 
                 <div class="img__itens">
-                    <img class="img__banner img__banner__rosa--responsivo" src="./images/img__carrossel/banner_carrosel--mobile-2.png" alt="">
+                    <img class="img__banner img__banner__rosa--responsivo"
+                        src="./images/img__carrossel/banner_carrosel--mobile-2.png" alt="">
 
                     <div class="banner__rosa  rosa__banner--responsivo"></div>
                     <h3 class="banner__texto  rosa__texto--responsivo">coleção atemporal</h3>
@@ -71,24 +74,22 @@
                 </div>
             </div>
 
-
-
             <button class="botao__banner" id="botao__esquerdo">◀</button>
             <button class="botao__banner" id="botao__direito">▶</button>
 
             <div class="barra__carrossel">
-                <button class="barra__item" id="barra__item-1"></button>
-                <button class="barra__item" id="barra__item-2"></button>
-                <button class="barra__item" id="barra__item-3"></button>
+                <button class="barra__item"></button>
+                <button class="barra__item"></button>
+                <button class="barra__item"></button>
             </div>
         </div>
     </header>
 
     <main class="container__main">
-        <section class="container__categoria categoria__tablet">
+        <section class="container__categoria">
             <h2>Busque por categoria:</h2>
 
-            <div class="categoria__item">
+            <div class="categoria__item" data-categoria="camiseta">
                 <img class="img__mobile" src="./images/img__categorias/categoria-camisa.png" alt="categoria camisas">
                 <!--imagens tablet-->
                 <img class="img__tablet" src="./images/img__categorias/categoria-camisa-tablet.png"
@@ -96,7 +97,7 @@
                 <p class="categoria__nome">camisetas</p>
             </div>
 
-            <div class="categoria__item">
+            <div class="categoria__item" data-categoria="bolsas">
                 <img class="img__mobile" src="./images/img__categorias/categoria-bolsas.png" alt="categoria bolsas">
                 <!--imagens tablet-->
                 <img class="img__tablet" src="./images/img__categorias/categoria-bolsas-tablet.png"
@@ -104,7 +105,7 @@
                 <p class="categoria__nome">bolsas</p>
             </div>
 
-            <div class="categoria__item">
+            <div class="categoria__item" data-categoria="calcados">
                 <img class="img__mobile" src="./images/img__categorias/categoria-calcados.png" alt="categoria calçados">
                 <!--imagens tablet-->
                 <img class="img__tablet" src="./images/img__categorias/categoria-calcados-tablet.png"
@@ -112,7 +113,7 @@
                 <p class="categoria__nome">calçados</p>
             </div>
 
-            <div class="categoria__item">
+            <div class="categoria__item" data-categoria="calcas">
                 <img class="img__mobile" src="./images/img__categorias/categoria-calcas.png" alt="categoria calças">
                 <!--imagens tablet-->
                 <img class="img__tablet" src="./images/img__categorias/categoria-calcas-tablet.png"
@@ -120,7 +121,7 @@
                 <p class="categoria__nome">calças</p>
             </div>
 
-            <div class="categoria__item">
+            <div class="categoria__item" data-categoria="casacos">
                 <img class="img__mobile" src="./images/img__categorias/categoria-casacos.png" alt="categoria casacos">
                 <!--imagens tablet-->
                 <img class="img__tablet" src="./images/img__categorias/categoria-casacos-tablet.png"
@@ -128,7 +129,7 @@
                 <p class="categoria__nome">casacos</p>
             </div>
 
-            <div class="categoria__item">
+            <div class="categoria__item" data-categoria="oculos">
                 <img class="img__mobile" src="./images/img__categorias/categoria-oculos.png" alt="categoria óculos">
                 <!--imagens tablet-->
                 <img class="img__tablet" src="./images/img__categorias/categoria-oculos-tablet.png"
@@ -140,55 +141,55 @@
         <section class="container__produtos">
             <h2 class="titulo__produtos">Produtos que estão bombando!</h2>
 
-            <div class="produtos__itens">
+            <div class="produtos__itens" data-produtos="camiseta">
                 <img src="./images/img__produtos/Card camiseta.png" alt="">
                 <h3 class="card__titulo">camiseta Conforto</h3>
                 <h4 class="card__texto">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.
                     Modelagem unissex.</h4>
                 <p class="preco">R$ 70,00</p>
-                <button class="ver__mais" id="ver__mais">Ver mais</button>
+                <button class="ver__mais">Ver mais</button>
             </div>
 
-            <div class="produtos__itens">
+            <div class="produtos__itens" data-produtos="calcas">
                 <img src="./images/img__produtos/Card calça.png" alt="">
                 <h3 class="card__titulo">Calça Alfaiataria</h3>
                 <h4 class="card__texto">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</h4>
                 <p class="preco">R$ 180,00</p>
-                <button class="ver__mais" id="ver__mais-2">Ver mais</button>
+                <button class="ver__mais">Ver mais</button>
             </div>
 
-            <div class="produtos__itens">
+            <div class="produtos__itens" data-produtos="calcados">
                 <img src="./images/img__produtos/Card tenis.png" alt="">
                 <h3 class="card__titulo">Tênis Chunky</h3>
                 <h4 class="card__texto">Snicker casual com solado mais alto e modelagem robusta.
                     Modelo unissex.</h4>
                 <p class="preco">R$ 250,00</p>
-                <button class="ver__mais" id="ver__mais-3">Ver mais</button>
+                <button class="ver__mais">Ver mais</button>
             </div>
 
-            <div class="produtos__itens">
+            <div class="produtos__itens" data-produtos="casacos">
                 <img src="./images/img__produtos/Card jaqueta jeans.png" alt="">
                 <h3 class="card__titulo">Jaqueta Jeans</h3>
                 <h4 class="card__texto">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</h4>
                 <p class="preco">R$ 150,00</p>
-                <button class="ver__mais" id="ver__mais-4">Ver mais</button>
+                <button class="ver__mais">Ver mais</button>
             </div>
 
-            <div class="produtos__itens">
+            <div class="produtos__itens" data-produtos="oculos">
                 <img src="./images/img__produtos/Cards óculos.png" alt="">
                 <h3 class="card__titulo">Óculos Redondo</h3>
                 <h4 class="card__texto">Armação metálica em grafite com lentes arredondadas. Sem erro!</h4>
                 <p class="preco">R$ 120,00</p>
-                <button class="ver__mais" id="ver__mais-5">Ver mais</button>
+                <button class="ver__mais">Ver mais</button>
             </div>
 
-            <div class="produtos__itens">
+            <div class="produtos__itens" data-produtos="bolsas">
                 <img src="./images/img__produtos/Card bolsa.png" alt="">
                 <h3 class="card__titulo">Bolsa coringa</h3>
                 <h4 class="card__texto">Bolsa camel em couro sintético de alta duração.
                     Ideal para acompanhar você por uma vida!</h4>
                 <p class="preco">R$ 120,00</p>
-                <button class="ver__mais" id="ver__mais-6">Ver mais</button>
+                <button class="ver__mais">Ver mais</button>
             </div>
 
             <!--/____________________________________________________________________________________/-->
@@ -228,15 +229,15 @@
                         <span>Tamanho:</span>
                         <div class="escolher__tamanho--item">
                             <input type="radio" id="p" name="tamanho">
-                            <label for="">P</label>
+                            <label for="p">P</label>
                             <input type="radio" id="pp" name="tamanho">
-                            <label for="">PP</label>
+                            <label for="pp">PP</label>
                             <input type="radio" id="m" name="tamanho">
-                            <label for="">M</label>
+                            <label for="m">M</label>
                             <input type="radio" id="g" name="tamanho">
-                            <label for="">G</label>
+                            <label for="g">G</label>
                             <input type="radio" id="gg" name="tamanho">
-                            <label for="">GG</label>
+                            <label for="gg">GG</label>
                         </div>
                         <button class="botao__add--sacola">Adicionar à sacola</button>
                     </div>
@@ -267,7 +268,7 @@
             <h2 class="texto__newletter">Quer receber nossas novidades,
                 promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h2>
             <div class="container__enviarEmail">
-                <input type="email" name="" id="" class="campo__email" placeholder="Digite seu email">
+                <input type="email" name="" id="campo__email" class="campo__email" placeholder="Digite seu email">
                 <button class="botao__enviar" id="botao__enviar">Enviar</button>
             </div>
 
@@ -288,7 +289,7 @@
     </main>
 
     <footer class="rodape">
-        <p class="rodape__texto">2023 &copy; Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+        <p class="rodape__texto">2023 &copy; Desenvolvido por Daniel Alves | Projeto fictício sem fins comerciais.</p>
     </footer>
 
     <script src="./js/main.js"></script>
